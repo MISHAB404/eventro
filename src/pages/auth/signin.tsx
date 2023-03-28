@@ -25,8 +25,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <style jsx>{`
+      .py-20 {
+    padding-top: 5rem;
+    padding-bottom: auto;
+}
+`}</style>
       <section className="bg-white dark:bg-white">
-  <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+  <div className="flex flex-col items-center justify-center px-6 py-20 mx-auto md:h-screen lg:py-8">
       <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-dark dark:text-black">
           <img className="w-8 h-8 mr-2" src="../logo.png" alt="logo" />
           VectorCrop    
@@ -53,14 +59,14 @@ export default function Home() {
                         <input id="terms" aria-describedby="terms" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" />
                       </div>
                       <div className="ml-3 text-sm">
-                        <label  className="font-light text-gray-500 dark:text-gray-300">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
+                        <label  className="font text-gray-500 dark:text-black">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
                       </div>
                   </div>
                   <button  onClick={index} className="
                   hover:text-white hover:bg-blue-600 transition delay-100 
                   w-full text-white bg-black hover:bg-primary-200 focus:ring-4 focus:outline-none focus:ring-danger-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-200 dark:focus:ring-primary-800">Create an account</button>
 
-                  <p className="text-sm font-light text-center text-gray-500 dark:text-gray-400">
+                  <p className="text-sm font text-center text-black dark:text-black">
                       Don't have an account? <a href="/auth/signup"  className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign Up</a>
                   </p>
               </form>

@@ -27,29 +27,42 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="bg-gray-50 dark:bg-gray-900">
-  <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-          <img className="w-8 h-8 mr-2" src="logow.png" alt="logo" />
-          VectorCrop    
-      </a>
+      <section className="bg-gray-900 text-white">
+  <div
+    className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+  >
+    <div className="mx-auto max-w-3xl text-center">
+      <h1
+        className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+      >
+        Meet your future
 
+        <span className="sm:block"> Goals with VectorCrop. </span>
+      </h1>
 
+      <p className="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
+      We will deliver you marketing and technology solutions in the best way.
+      </p>
 
-      <div className="flex gap-4">
-  <button  onClick={signup} className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
-  Create an account
-  </button>
-  <button onClick={signin} className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
-  Sign in
-  </button>
-</div>
+      <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+          href="/auth/signin"
+        >
+          Sign in
+        </a>
 
-    
-
-      
+        <a
+          className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+          href="/auth/signup"
+        >
+          Sign Up
+        </a>
+      </div>
+    </div>
   </div>
 </section>
+
     </>
   )
 }

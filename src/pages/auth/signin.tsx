@@ -29,24 +29,25 @@ export default function Home() {
       .py-20 {
     padding-top: 5rem;
     padding-bottom: auto;
+    
 }
 `}</style>
       <section className="bg-white dark:bg-white">
   <div className="flex flex-col items-center justify-center px-6 py-20 mx-auto md:h-screen lg:py-8">
-      <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-dark dark:text-black">
+      {/* <a href="#" className="flex font-sans items-center mb-6 text-2xl font-semibold text-dark dark:text-black">
           <img className="w-8 h-8 mr-2" src="../logo.png" alt="logo" />
           VectorCrop    
-      </a>
+      </a> */}
       <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 dark:border-2 sm:max-w-md xl:p-0 dark:bg-white dark:border-gray-900">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-black">
-                  Welcome Back Dear
+              <h1 className="text-xl font-bold leading-tight text-center tracking-tight text-gray-900 md:text-2xl dark:text-black">
+                  Welcome Back!
               </h1>
               <form className="space-y-4 md:space-y-6" action="#">
                   <div>
                       <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                       <input type="email" name="email" id="email" className="border-2 
-                       bg-dark border border-gray-300 text-gray-900 sm:text-sm rounded-lg  block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark focus:outline outline-offset-2 outline-cyan-500 " placeholder="name@company.com" />
+                       bg-dark border border-gray-300 text-gray-900 sm:text-sm rounded-lg  block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder dark:text-dark focus:outline outline-offset-2 outline-cyan-500 " placeholder="name@company.com" />
                   </div>
                   <div>
                       <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Password</label>
@@ -62,9 +63,10 @@ export default function Home() {
                         <label  className="font text-gray-500 dark:text-black">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
                       </div>
                   </div>
-                  <button  onClick={index} className="
-                  hover:text-white hover:bg-blue-600 transition delay-100 
-                  w-full text-white bg-black hover:bg-primary-200 focus:ring-4 focus:outline-none focus:ring-danger-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-200 dark:focus:ring-primary-800">Create an account</button>
+
+         
+
+                  <a title="" className="group relative block h-full bg-white before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-dashed before:border-gray-900 dark:bg-white dark:before:border-gray-700" href="/"><div className="hover:text-white hover:bg-blue-600 transition delay-100  rounded-lg border-2 border-gray-900 bg-white transition group-hover:-translate-x-2 group-hover:-translate-y-2 dark:border-gray-700 dark:bg-black"><div className="text-center p-2"><h2 className=" text-lg font-medium text-gray-900 dark:text-white">Create an account</h2></div></div></a>
 
                   <p className="text-sm font text-center text-black dark:text-black">
                       Don't have an account? <a href="/auth/signup"  className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign Up</a>

@@ -30,12 +30,22 @@ export default function Home() {
       <section className="bg-gray-50 dark:bg-gray-900">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-          <img className="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo" />
-          Flowbite    
+          <img className="w-8 h-8 mr-2" src="logow.png" alt="logo" />
+          VectorCrop    
       </a>
 
-      <button  onClick={signup} className="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create an account</button><br></br>
-      <button  onClick={signin} className="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
+
+
+      <div className="flex gap-4">
+  <button  onClick={signup} className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+  Create an account
+  </button>
+  <button onClick={signin} className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+  Sign in
+  </button>
+</div>
+
+    
 
       
   </div>

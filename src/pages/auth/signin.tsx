@@ -40,20 +40,31 @@ export default function Home() {
       </a> */}
       <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 dark:border-2 sm:max-w-md xl:p-0 dark:bg-white dark:border-gray-900">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 className="text-xl font-bold leading-tight text-center tracking-tight text-gray-900 md:text-2xl dark:text-black">
+              <h1 className="text-xl font-mabry font-bold leading-tight text-center tracking-tight text-gray-900 md:text-2xl dark:text-black">
                   Welcome Back!
               </h1>
               <form className="space-y-4 md:space-y-6" action="#">
-                  <div>
-                      <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
-                      <input type="email" name="email" id="email" className="border-2 
-                       bg-dark border border-gray-300 text-gray-900 sm:text-sm rounded-lg  block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder dark:text-dark focus:outline outline-offset-2 outline-cyan-500 " placeholder="name@company.com" />
-                  </div>
-                  <div>
-                      <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Password</label>
-                      <input type="password" name="password" id="password" placeholder="••••••••" className="border-2 
-                       bg-dark border border-gray-300 text-gray-900 sm:text-sm rounded-lg  block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark focus:outline outline-offset-2 outline-red-500 " />
-                  </div>
+                
+                <div>
+                <label htmlFor="UserEmail" className="relative block overflow-hidden rounded-md border-2 border-black px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+                <input type="email" id="UserEmail" placeholder="Email" className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm text-black"/>
+                 <span className="absolute left-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+                   Email
+                 
+                  </span>
+                </label>
+                </div>
+                
+                <div>
+                <label htmlFor="Pass" className="relative block overflow-hidden rounded-md border-2 border-black px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+                <input type="password" id="Pass" placeholder="Password" className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm text-black"/>
+                 <span className="absolute left-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+                   Password
+                  </span>
+                </label>
+                </div>
+                
+                  
               
                   <div className="flex items-start">
                       <div className="flex items-center h-5">
@@ -66,7 +77,7 @@ export default function Home() {
 
          
 
-                  <a title="" className="group relative block h-full bg-white before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-dashed before:border-gray-900 dark:bg-white dark:before:border-gray-700" href="/"><div className="hover:text-white hover:bg-blue-600 transition delay-100  rounded-lg border-2 border-gray-900 bg-white transition group-hover:-translate-x-2 group-hover:-translate-y-2 dark:border-gray-700 dark:bg-black"><div className="text-center p-2"><h2 className=" text-lg font-medium text-gray-900 dark:text-white">Create an account</h2></div></div></a>
+                  <a title="" className="group relative block h-full bg-white before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-dashed before:border-gray-900 dark:bg-white dark:before:border-gray-700" href="/"><div className="hover:text-white hover:bg-blue-600 transition delay-100  rounded-lg border-2 border-gray-900 bg-white transition group-hover:-translate-x-2 group-hover:-translate-y-2 dark:border-gray-700 dark:bg-black"><div className="text-center p-2"><h3 className=" text-lg font-medium text-gray-900 dark:text-white">Sign in</h3></div></div></a>
 
                   <p className="text-sm font text-center text-black dark:text-black">
                       Don't have an account? <a href="/auth/signup"  className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign Up</a>

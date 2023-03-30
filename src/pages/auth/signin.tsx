@@ -29,17 +29,17 @@ export default function Home() {
       .py-20 {
     padding-top: 5rem;
     padding-bottom: auto;
-    
+
 }
 `}</style>
       <section className="bg-white dark:bg-white">
-  <div className="flex flex-col items-center justify-center px-6 py-20 mx-auto md:h-screen lg:py-8">
+  <div className="flex flex-col items-center justify-center px-6 py-20 mx-auto md:h-screen lg:py-8 bg-white dark:bg-white">
       {/* <a href="#" className="flex font-sans items-center mb-6 text-2xl font-semibold text-dark dark:text-black">
           <img className="w-8 h-8 mr-2" src="../logo.png" alt="logo" />
           VectorCrop    
       </a> */}
-      <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 dark:border-2 sm:max-w-md xl:p-0 dark:bg-white dark:border-gray-900">
-          <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+      <div className="w-full bg-white rounded-lg shadow border md:mt-0 border-2 sm:max-w-md xl:p-0 bg-white border-gray-900 dark:border md:mt-0 dark:border-2 sm:max-w-md xl:p-0 dark:bg-white dark:border-gray-900">
+          <div className="border-black p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-mabry font-bold leading-tight text-center tracking-tight text-gray-900 md:text-2xl dark:text-black">
                   Welcome Back!
               </h1>
@@ -68,16 +68,19 @@ export default function Home() {
               
                   <div className="flex items-start">
                       <div className="flex items-center h-5">
-                        <input id="terms" aria-describedby="terms" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" />
+                        <input id="terms" aria-describedby="terms" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-50 dark:border-gray-300 dark:focus:ring-primary-600 dark:ring-offset-gray-800" />
                       </div>
                       <div className="ml-3 text-sm">
-                        <label  className="font text-gray-500 dark:text-black">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
+                        <label  className="font text-black dark:text-black">I accept the <a className="font-medium text-primary-500 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
                       </div>
                   </div>
 
          
 
-                  <a title="" className="group relative block h-full bg-white before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-dashed before:border-gray-900 dark:bg-white dark:before:border-gray-700" href="/"><div className="hover:text-white hover:bg-blue-600 transition delay-100  rounded-lg border-2 border-gray-900 bg-white transition group-hover:-translate-x-2 group-hover:-translate-y-2 dark:border-gray-700 dark:bg-black"><div className="text-center p-2"><h3 className=" text-lg font-medium text-gray-900 dark:text-white">Sign in</h3></div></div></a>
+                  <a title="" className="group relative block h-full bg-white before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-dashed before:border-gray-900 dark:bg-white dark:before:border-gray-700" href="/">
+                    <div className="hover:text-white hover:bg-blue-600 transition delay-100  rounded-lg border-2 border-gray-900 bg-black transition group-hover:-translate-x-2 group-hover:-translate-y-2 dark:border-gray-700 dark:bg-black">
+                      <div className="text-center p-2">
+                        <h3 className=" text-lg font-medium text-white dark:text-white">Sign in</h3></div></div></a>
 
                   <p className="text-sm font text-center text-black dark:text-black">
                       Don't have an account? <a href="/auth/signup"  className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign Up</a>
